@@ -72,3 +72,23 @@ BA.Data("indu",20000)
 BA.withdraw(1000)
 BA.showBalance()
 
+class Emp:
+    def Data(self , name, basic_salary):
+        self.name=name
+        self.basic_salary=basic_salary
+    def calculateSalary(self):
+        if self.basic_salary>=50000:
+            print("bonus is 20%of salary")
+        elif self.basic_salary>=30000:
+            print("bonus is 10% of salary")
+        else:
+            print("bonus is 5% of salary")
+
+    def finalSalary(self):
+        print(self.basic_salary)
+
+emp=Emp()
+emp.Data( "indu",100000)
+emp.calculateSalary()
+emp.finalSalary()
+

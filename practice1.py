@@ -118,3 +118,31 @@ sc.addItem(150)
 sc.addItem(550)
 sc.addItem(50)
 sc.applyDiscount()
+
+class Book:
+    def data(self,title,author):
+        self.title=title
+        self.author=author
+    def display(self):
+        print(self.title,self.author)
+
+b=Book()
+b.data("aa","bbb")
+b.display()
+
+class Calci:
+    def setData(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
+    def add(self):
+        self.sum=self.num1+self.num2
+        print(self.sum , "sum of 2 digit")
+    def sub(self):
+        self.diff=self.num1-self.num2
+        print(self.diff , "difference of 2 digit")
+
+cal=Calci()
+cal.setData(23,25)
+cal.add()
+cal.sub()
+

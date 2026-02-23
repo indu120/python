@@ -92,3 +92,29 @@ emp.Data( "indu",100000)
 emp.calculateSalary()
 emp.finalSalary()
 
+class ShoppingCart:
+    def setData(self,name,total_amount):
+        self.name=name
+        self.total_amount=total_amount
+
+    def  setCustomer(self,name):
+        self.name=name
+    def addItem(self,price):
+        self.total_amount+=price
+    def applyDiscount(self):
+        if self.total_amount >=5000:
+            print("20% discount")
+        elif self.total_amount >=2000:
+            print("10% discount")
+        else:
+            print("no discount")
+
+
+sc =ShoppingCart()
+sc.setData("indu",1000)
+sc.setCustomer("indu")
+sc.addItem(250)
+sc.addItem(150)
+sc.addItem(550)
+sc.addItem(50)
+sc.applyDiscount()

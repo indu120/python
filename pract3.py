@@ -12,3 +12,8 @@ emp2=Employee()
 emp2.getdata("pqr",45000,"tester")
 print(emp2.name,emp2.sal,emp2.dept,emp1.company)
 
+emp3=Employee()
+Employee.company="XYZ"
+emp3.getdata("pqr",45000,"tester")
+print(emp3.name,emp3.sal,emp3.dept,emp1.company)
+

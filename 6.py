@@ -14,7 +14,7 @@ print(s2.name,s2.age,s2.clg)
 s3=Student()
 s3.setData("cc",21)
 # modifiying static variable
-Student.clg="UBDT"
+Student.clg= "UBDT"
 print(s3.name,s3.age,s3.clg)
 
 

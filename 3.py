@@ -17,11 +17,11 @@ data(name = "indu",age = 21,gender = "female")
 
 def outer():
     msg = "hi from outer"
-    print("msg")
+    print(msg)
     # print(imsg)
     def inner():
-        print("msg")
         imsg = "hi from inner"
+        print(imsg)
 
     inner()
 
